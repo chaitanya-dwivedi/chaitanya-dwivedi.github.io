@@ -114,7 +114,7 @@
         <!-- Expanded News History (strict reverse-chronological, revealed on click) -->
         <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Jun 2026</span>
-          <div>Contributed distributed-training debugging tasks and evaluation adapters to <a href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Terminal-Bench</a> and <a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener">Harbor</a>, alongside upstream MoE router improvements to <a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" rel="noopener">NVIDIA Megatron-LM</a>.</div>
+          <div>Contributed tasks to <a href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Terminal-Bench</a> and evaluation adapters to <a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener">Harbor</a>, alongside upstream MoE router improvements to <a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" rel="noopener">NVIDIA Megatron-LM</a>.</div>
         </li>
         <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">May 2026</span>
@@ -172,52 +172,31 @@
       <button class="news-more-btn" id="newsMoreBtn" type="button" aria-expanded="false">Show more &darr;</button>
     </section>
 
-    <!-- Research, Industry & Open-Source Highlights (Elevated right below News) -->
+    <!-- Systems & Deployment Highlights (Complementary technical/deployment substance, zero intro/pub repetition) -->
     <section id="highlights">
       <div class="section-header">
-        <h2>Research &amp; Industry Highlights</h2>
-      </div>
-      <div class="highlights-grid-2">
-        <div class="impact-card">
-          <h3>Amazon Rufus Foundation Models</h3>
-          <div class="impact-metric">300M+ Customers &middot; $10B+ Annualized Sales</div>
-          <p>Led ~trillion-parameter ultra-sparse MoE architecture and pre-training, matching or surpassing <strong>DeepSeek-V3-Base</strong> and <strong>Kimi-K2-Base</strong> on <strong>MMLU, MMLU-Pro, MATH</strong>, and shopping benchmarks at <strong>50% lower latency</strong> and <strong>2&times; MFU</strong>, plus async GRPO RL (<strong>2&times; throughput</strong>).</p>
-        </div>
-        <div class="impact-card">
-          <h3>Recurrent-Depth, Scaling Proxies &amp; RL (IFM)</h3>
-          <div class="impact-metric">&tau;<sub>b</sub> = 0.946 Capability Proxies &middot; Loop Growth &amp; Length RL</div>
-          <p>Designed likelihood, entropy, and rank capability proxies replacing validation-loss scaling laws in recipe selection, alongside recurrent-depth MoE growth, KV-cache sharing for long-context serving, and <strong>trajectory length-penalty optimization</strong> in RL.</p>
-        </div>
-        <div class="impact-card">
-          <h3>Amazon Alexa Semantic Retrieval</h3>
-          <div class="impact-metric">500M+ Devices &middot; EMNLP 2023 Best Paper</div>
-          <p>Directed U.S.-wide runtime deployment of query-correction and global-index personalized dense voice retrieval models (+80% recall, +91% entity retrieval).</p>
-        </div>
-        <div class="impact-card">
-          <h3>PathAI AIM-Fusion Pathology</h3>
-          <div class="impact-metric">1,383 Trial Biopsies &middot; Gilead Sciences</div>
-          <p>Led research on first-of-their-kind non-registered multi-stain CNN&ndash;GNN pathology models productized as <strong>AIM-Fusion</strong> across multi-center NASH clinical trials.</p>
-        </div>
-      </div>
-
-      <div class="section-header subsection-header">
-        <h2>Open-Source Highlights</h2>
+        <h2>Systems &amp; Deployment Highlights</h2>
       </div>
       <div class="highlights-grid">
         <div class="impact-card">
-          <h3>K2-Horizon Open-Model Fleet</h3>
-          <div class="impact-metric">680K+ HF Downloads &middot; 19 Repos</div>
-          <p>Pre-training and diffusion distillation recipes for six fully open models (0.9B&ndash;375B) released with checkpoints, training data, and code (<a href="https://huggingface.co/IFM" target="_blank" rel="noopener">IFM</a>).</p>
+          <h3>Scaling Proxies, Recurrent-Depth &amp; RL (IFM)</h3>
+          <div class="impact-metric">Kendall&rsquo;s &tau;<sub>b</sub> = 0.946 Proxies &middot; KV-Cache Sharing &middot; Length RL</div>
+          <p>Designed likelihood, entropy, and rank capability proxies replacing validation-loss scaling laws in recipe selection, alongside recurrent-depth MoE growth, KV-cache sharing for long-context serving, and <strong>trajectory length-penalty optimization</strong>.</p>
         </div>
         <div class="impact-card">
-          <h3>Uno, LoRM &amp; Expert Upcycling</h3>
-          <div class="impact-metric">59.5K+ Adapter Downloads &middot; Open Code</div>
-          <p>Released open weights and reproducible training and inference codebases for <a href="https://github.com/ifm-ai/uno" target="_blank" rel="noopener">Uno</a>, <a href="https://github.com/ifm-ai/LoRM" target="_blank" rel="noopener">LoRM</a>, and <a href="https://github.com/amazon-science/expert-upcycling" target="_blank" rel="noopener">Expert Upcycling</a>.</p>
+          <h3>Amazon Rufus: MoE Systems, Mid-Training &amp; RL</h3>
+          <div class="impact-metric">50% Lower Latency &middot; 2&times; MFU &middot; 2&times; Async GRPO Throughput</div>
+          <p>Co-designed ultra-sparse MoE sparsity and attention for <strong>50% lower serving latency</strong> and <strong>2&times; cluster MFU</strong>, revived <strong>75% of dormant experts</strong> (+10% quality), curated mid-training mixtures (+10% on AIME&rsquo;25 &amp; SWE-bench), and built async GRPO RL.</p>
         </div>
         <div class="impact-card">
-          <h3>Agent Benchmarks &amp; Training Frameworks</h3>
-          <div class="impact-metric">Terminal-Bench &middot; Harbor &middot; Megatron &middot; NeMo</div>
-          <p>Contributed distributed-training tasks and evaluation adapters to <a href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Terminal-Bench</a> and <a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener">Harbor</a>, plus upstream MoE improvements in <a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" rel="noopener">Megatron-LM</a> and <a href="https://github.com/NVIDIA/NeMo" target="_blank" rel="noopener">NeMo</a>.</p>
+          <h3>Amazon Alexa: U.S.-Wide Voice Retrieval</h3>
+          <div class="impact-metric">500M+ Devices &middot; EMNLP 2023 Best Industry Paper</div>
+          <p>Directed U.S.-wide runtime deployment of query-correction and global-index personalized dense voice retrieval models, improving recall by <strong>+80%</strong> and entity retrieval by <strong>+91%</strong> across production traffic.</p>
+        </div>
+        <div class="impact-card">
+          <h3>PathAI: AIM-Fusion Clinical Deployment</h3>
+          <div class="impact-metric">1,383 Trial Biopsies &middot; Gilead Sciences</div>
+          <p>Productized non-registered multi-stain CNN&ndash;GNN pathology models as <strong>AIM-Fusion</strong> across multi-center NASH clinical trials, validating histological scores against FibroScan, morphometry, and RNA-seq.</p>
         </div>
       </div>
     </section>
@@ -326,7 +305,7 @@
           </div>
           <div class="pub-title">Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces</div>
           <div class="pub-authors">Terminal-Bench Team (Credited Task Author &amp; Contributor: <strong>Chaitanya Dwivedi</strong>)</div>
-          <p class="pub-summary">Standardized CLI agent benchmark (adopted on Gemini and Claude model cards); authored distributed-training debugging task <code>vpp-loss-divergence</code> and Harbor ecosystem adapters.</p>
+          <p class="pub-summary">Standardized CLI agent benchmark (adopted on Gemini and Claude model cards); contributed benchmark tasks and Harbor evaluation adapters.</p>
           <div class="pub-links">
             <a class="pill-link" href="https://arxiv.org/abs/2601.11868" target="_blank" rel="noopener">Paper</a>
             <a class="pill-link" href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Code</a>
