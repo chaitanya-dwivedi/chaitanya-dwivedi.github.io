@@ -21,8 +21,8 @@
       <a href="#top" class="nav-brand">Chaitanya Dwivedi</a>
       <div class="nav-links">
         <a href="#news" class="hide-mobile">News</a>
-        <a href="#publications">Publications</a>
         <a href="#highlights" class="hide-mobile">Highlights</a>
+        <a href="#publications">Publications</a>
         <a href="#experience" class="hide-mobile">Experience</a>
         <a href="assets/Chaitanya_Dwivedi_CV.pdf" target="_blank" rel="noopener">CV</a>
         <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle color theme">Dark</button>
@@ -57,17 +57,6 @@
               CV
             </a>
           </div>
-
-          <div class="sidebar-focus">
-            <div class="sidebar-label">Research Focus</div>
-            <div class="interest-tags">
-              <span class="interest-tag">Training Dynamics &amp; Scaling Laws</span>
-              <span class="interest-tag">Recurrent-Depth &amp; MoE Upcycling</span>
-              <span class="interest-tag">Mid-Training Data Mixtures</span>
-              <span class="interest-tag">Discrete Diffusion Models</span>
-              <span class="interest-tag">Async &amp; Length-Controlled RL</span>
-            </div>
-          </div>
         </aside>
 
         <div class="hero-main">
@@ -76,20 +65,20 @@
 
           <div class="bio">
             <p>
-              I am a Senior Research Scientist at the <strong>Institute of Foundation Models (IFM)</strong>, specializing in compute-efficient LLM training, reinforcement learning for reasoning and agents, and frontier evaluation across large-scale commercial deployments and open-weight foundation models. My work sits at the interface of <strong>LLM training dynamics and compute-efficient scaling</strong>, exploring how to systematically unlock model capability across the training lifecycle, spanning <strong>pre-training</strong> (designing capability proxy metrics, scaling laws, and sparse architecture design), <strong>progressive model growth and upcycling</strong>, <strong>mid-training</strong> (data mixture curation and annealing), and <strong>reinforcement learning</strong> (asynchronous RL systems and trajectory length-penalty optimization).
+              I am a Senior Research Scientist at the <strong>Institute of Foundation Models (IFM)</strong>, working at the interface of <strong>LLM training dynamics and compute-efficient scaling</strong>. My research explores how to systematically scale model performance across the training lifecycle, spanning <strong>pre-training</strong> (scaling laws, capability proxy metrics, and sparse architectures), <strong>progressive model growth</strong>, <strong>mid-training</strong> data mixtures, and <strong>reinforcement learning</strong>.
             </p>
             <p>
-              At <strong>IFM</strong>, I focus on <strong>recurrent-depth language models</strong>, tracking how depth recurrence shapes representation and capability emergence across pre-training, mid-training, and RL, as well as <strong>discrete diffusion models</strong> for lossless speculative generation. I also developed pre-training and diffusion distillation recipes for the <a href="https://huggingface.co/IFM" target="_blank" rel="noopener">K2-Horizon</a> open-source model suite (0.9B&ndash;375B; <strong>680K+ Hugging Face downloads</strong>). Previously at <strong>Amazon</strong> (2022&ndash;2026), I led pre-training and ~trillion-parameter scale ultra-sparse MoE architecture design for the foundation models powering <strong>Amazon Rufus</strong> (serving <strong>300M+ customers in 2025</strong>), delivering base models that matched or surpassed leading open frontier models such as <strong>DeepSeek-V3-Base</strong> and <strong>Kimi-K2-Base</strong>. Earlier at <strong>PathAI</strong> (2019&ndash;2022), I led research on first-of-their-kind graph fusion neural networks for multimodal computational pathology. During my Master&rsquo;s at <strong>Carnegie Mellon University</strong>, I was advised by <a href="https://www.andrew.cmu.edu/user/gaurij/" target="_blank" rel="noopener">Dr. Gauri Joshi</a>, working on probabilistic embeddings and sample-efficient uncertainty estimation in deep learning.
+              At <strong>IFM</strong>, I study <strong>recurrent-depth language models</strong> across pre-training, mid-training, and RL, alongside <strong>discrete diffusion models</strong> and pre-training/distillation recipes for the <a href="https://huggingface.co/IFM" target="_blank" rel="noopener">K2-Horizon</a> open-source model suite (0.9B&ndash;375B; <strong>680K+ Hugging Face downloads</strong>). Previously at <strong>Amazon</strong>, I led ~trillion-parameter scale ultra-sparse MoE architecture design and pre-training for <strong>Amazon Rufus</strong> (<strong>300M+ customers</strong>, <strong>$10B+ annualized sales</strong>), delivering base models that matched or surpassed the open-source SOTA at the time (<strong>DeepSeek-V3-Base</strong> and <strong>Kimi-K2-Base</strong>). Earlier, I led multimodal graph-fusion pathology research at <strong>PathAI</strong> and completed my Master&rsquo;s at <strong>Carnegie Mellon University</strong> advised by <a href="https://www.andrew.cmu.edu/user/gaurij/" target="_blank" rel="noopener">Dr. Gauri Joshi</a>.
             </p>
             <p>
-              I am also an avid open-source contributor to widely used LLM evaluation and distributed-training projects, including <a href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Terminal-Bench</a>, <a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener">Harbor adapters</a>, <a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" rel="noopener">NVIDIA Megatron-LM</a>, and <a href="https://github.com/NVIDIA/NeMo" target="_blank" rel="noopener">NVIDIA NeMo</a>.
+              I am also an avid open-source contributor to widely used LLM evaluation and distributed-training frameworks, including <a href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Terminal-Bench</a>, <a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener">Harbor adapters</a>, <a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" rel="noopener">NVIDIA Megatron-LM</a>, and <a href="https://github.com/NVIDIA/NeMo" target="_blank" rel="noopener">NVIDIA NeMo</a>.
             </p>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- News & Media Timeline -->
+    <!-- News & Media (Compact 6-item preview + Show more) -->
     <section id="news">
       <div class="section-header">
         <h2>News &amp; Media</h2>
@@ -97,7 +86,9 @@
       <ul class="news-list">
         <li class="news-item">
           <span class="news-date">Nov 2026</span>
-          <div>Released the <a href="https://arxiv.org/abs/2611.21003" target="_blank" rel="noopener">K2-Horizon Technical Report</a> as the suite surpasses <strong>680K+ Hugging Face downloads</strong> and joins the official <a href="https://ollama.com/ifm/k2-horizon" target="_blank" rel="noopener">Ollama Library</a>, with media and technical coverage across <a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L6N44V0QO:0-abu-dhabi-ai-institute-releases-fully-open-source-models-with-training-data-code/" target="_blank" rel="noopener">Reuters</a>, <a href="https://www.prnewswire.com/news-releases/institute-of-foundation-models-launches-the-industrys-largest-fully-open-source-fleet-of-ai-models-complete-with-weights-code-training-data-and-methodologies-302868628.html" target="_blank" rel="noopener">PR Newswire</a>, <a href="https://www.wam.ae/en/article/c227c2u-mbzuais-institute-foundation-models-launches" target="_blank" rel="noopener">WAM</a>, <a href="https://www.thenationalnews.com/news/uae/2026/05/07/how-tomorrows-world-is-being-shaped-in-abu-dhabi/" target="_blank" rel="noopener">The National</a>, <a href="https://moorinsightsstrategy.com/mbzuai-ifm-launches-6-k2-horizon-frontier-models-doubles-down-on-openness-analyst-insight/" target="_blank" rel="noopener">Moor Insights</a>, <a href="https://www.marktechpost.com/2026/09/06/ifm-releases-k2-horizon-six-apache-2-0-models-from-0-9b-to-375b/" target="_blank" rel="noopener">MarkTechPost</a>, <a href="https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/" target="_blank" rel="noopener">Latent Space</a>, <a href="https://www.middleeastainews.com/p/mbzuais-ifm-releases-worlds-largest" target="_blank" rel="noopener">Middle East AI News</a>, <a href="https://rits.shanghai.nyu.edu/ai/ifm-releases-k2-horizon-six-open-models/" target="_blank" rel="noopener">NYU</a>, <a href="https://dataphoenix.info/news/mbzuai-k2-horizon-open-models" target="_blank" rel="noopener">Data Phoenix</a>, <a href="https://ibl.ai/blog/k2-horizon-fully-open-model-fleet-enterprise" target="_blank" rel="noopener">IBL News</a>, <a href="https://emergent.sh/news/mbzuai-k2-horizon-375b-moe-tops-toolathlon" target="_blank" rel="noopener">Emergent</a>, and <a href="https://sparsenotes.com/posts/2026/11/papers/k2-horizon-open-frontier-fleet/" target="_blank" rel="noopener">Sparse Notes</a>.</div>
+          <div>
+            Released the <a href="https://arxiv.org/abs/2611.21003" target="_blank" rel="noopener">K2-Horizon Technical Report</a> (<strong>680K+ HF downloads</strong>; <a href="https://ollama.com/ifm/k2-horizon" target="_blank" rel="noopener">Ollama</a>), covered by <a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L6N44V0QO:0-abu-dhabi-ai-institute-releases-fully-open-source-models-with-training-data-code/" target="_blank" rel="noopener">Reuters</a>, <a href="https://www.prnewswire.com/news-releases/institute-of-foundation-models-launches-the-industrys-largest-fully-open-source-fleet-of-ai-models-complete-with-weights-code-training-data-and-methodologies-302868628.html" target="_blank" rel="noopener">PR Newswire</a>, <a href="https://www.wam.ae/en/article/c227c2u-mbzuais-institute-foundation-models-launches" target="_blank" rel="noopener">WAM</a>, <a href="https://www.thenationalnews.com/news/uae/2026/05/07/how-tomorrows-world-is-being-shaped-in-abu-dhabi/" target="_blank" rel="noopener">The National</a>, <a href="https://moorinsightsstrategy.com/mbzuai-ifm-launches-6-k2-horizon-frontier-models-doubles-down-on-openness-analyst-insight/" target="_blank" rel="noopener">Moor Insights</a>, <a href="https://www.marktechpost.com/2026/09/06/ifm-releases-k2-horizon-six-apache-2-0-models-from-0-9b-to-375b/" target="_blank" rel="noopener">MarkTechPost</a>, <a href="https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/" target="_blank" rel="noopener">Latent Space</a><span class="extra-outlets hidden" id="k2ExtraOutlets">, <a href="https://www.middleeastainews.com/p/mbzuais-ifm-releases-worlds-largest" target="_blank" rel="noopener">Middle East AI News</a>, <a href="https://rits.shanghai.nyu.edu/ai/ifm-releases-k2-horizon-six-open-models/" target="_blank" rel="noopener">NYU</a>, <a href="https://dataphoenix.info/news/mbzuai-k2-horizon-open-models" target="_blank" rel="noopener">Data Phoenix</a>, <a href="https://ibl.ai/blog/k2-horizon-fully-open-model-fleet-enterprise" target="_blank" rel="noopener">IBL News</a>, <a href="https://emergent.sh/news/mbzuai-k2-horizon-375b-moe-tops-toolathlon" target="_blank" rel="noopener">Emergent</a>, and <a href="https://sparsenotes.com/posts/2026/11/papers/k2-horizon-open-frontier-fleet/" target="_blank" rel="noopener">Sparse Notes</a></span> <button class="inline-toggle" id="k2OutletsBtn" type="button">+6 more</button>.
+          </div>
         </li>
         <li class="news-item">
           <span class="news-date">Nov 2026</span>
@@ -107,21 +98,27 @@
           <span class="news-date">Oct 2026</span>
           <div>Researchers at <strong>EPFL</strong> (<a href="https://arxiv.org/abs/2610.13370" target="_blank" rel="noopener">arXiv:2610.13370</a>) adopt <strong>Expert Upcycling</strong> to expand a 3B MoE model from 128 to 160 routed experts.</div>
         </li>
-        <li class="news-item news-older hidden" data-older="true">
-          <span class="news-date">Oct 2026</span>
-          <div>Independent groups at <strong>UCLA</strong> (<a href="https://arxiv.org/abs/2610.31819" target="_blank" rel="noopener">arXiv:2610.31819</a>), <strong>MIT</strong> (<a href="https://arxiv.org/abs/2610.30066" target="_blank" rel="noopener">arXiv:2610.30066</a>), <strong>Utrecht University</strong> (<a href="https://arxiv.org/abs/2610.41574" target="_blank" rel="noopener">arXiv:2610.41574</a>), and <strong>UT Austin</strong> (<a href="https://arxiv.org/abs/2610.22294" target="_blank" rel="noopener">arXiv:2610.22294</a>) benchmark <strong>Uno</strong> discrete-diffusion decoding.</div>
-        </li>
         <li class="news-item">
           <span class="news-date">Sep 2026</span>
           <div><a href="https://arxiv.org/abs/2606.06835" target="_blank" rel="noopener">Translate-R1</a> accepted to <strong>EACL 2027 (Main Conference Oral)</strong>.</div>
         </li>
         <li class="news-item">
           <span class="news-date">Sep 2026</span>
-          <div>Launched the <a href="https://ifm.ai/blog/k2/" target="_blank" rel="noopener">K2-Horizon</a> Apache-2.0 open-source model fleet (0.9B&ndash;375B with intermediate checkpoints, training data &amp; code), covered by <a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L6N44V0QO:0-abu-dhabi-ai-institute-releases-fully-open-source-models-with-training-data-code/" target="_blank" rel="noopener">Reuters</a>, <a href="https://www.prnewswire.com/news-releases/institute-of-foundation-models-launches-the-industrys-largest-fully-open-source-fleet-of-ai-models-complete-with-weights-code-training-data-and-methodologies-302868628.html" target="_blank" rel="noopener">PR Newswire</a>, <a href="https://www.wam.ae/en/article/c227c2u-mbzuais-institute-foundation-models-launches" target="_blank" rel="noopener">WAM</a>, <a href="https://www.thenationalnews.com/news/uae/2026/05/07/how-tomorrows-world-is-being-shaped-in-abu-dhabi/" target="_blank" rel="noopener">The National</a>, <a href="https://moorinsightsstrategy.com/mbzuai-ifm-launches-6-k2-horizon-frontier-models-doubles-down-on-openness-analyst-insight/" target="_blank" rel="noopener">Moor Insights</a>, <a href="https://www.marktechpost.com/2026/09/06/ifm-releases-k2-horizon-six-apache-2-0-models-from-0-9b-to-375b/" target="_blank" rel="noopener">MarkTechPost</a>, and <a href="https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/" target="_blank" rel="noopener">Latent Space</a>.</div>
+          <div>Released <a href="https://arxiv.org/abs/2609.04010" target="_blank" rel="noopener">Uno: Unlocking Lossless Speedups in LLMs via Discrete Diffusion</a> (2.2&times; generation speedup, 40% faster RL rollouts, <strong>59.5K+ HF adapter downloads</strong>), featured in <a href="https://nebius.com/events/webinar-nebius-science-paper-club-lossless-speedups-via-discrete-diffusion" target="_blank" rel="noopener">Nebius Science Paper Club</a>, <a href="https://academy.dair.ai/papers/unlocking-lossless-speedups-in-llms-via-discrete-diffusion-2609.04010" target="_blank" rel="noopener">DAIR.AI</a>, and <em>The Weekly Salt</em>.</div>
         </li>
         <li class="news-item">
+          <span class="news-date">Dec 2025</span>
+          <div><strong>Amazon Rufus</strong> foundation models surpass <strong>300M+ customers in 2025</strong>, pace <strong>$10B+ in annualized incremental sales</strong> (<a href="https://fortune.com/2025/11/02/amazon-rufus-ai-shopping-assistant-chatbot-10-billion-sales-monetization/" target="_blank" rel="noopener">Fortune</a>), and drive a 100% Black Friday purchase-session increase (<a href="https://techcrunch.com/2025/12/01/amazons-ai-chatbot-rufus-drove-sales-on-black-friday/" target="_blank" rel="noopener">TechCrunch</a>).</div>
+        </li>
+
+        <!-- Expanded News History (revealed on click) -->
+        <li class="news-item news-older hidden" data-older="true">
+          <span class="news-date">Oct 2026</span>
+          <div>Independent groups at <strong>UCLA</strong> (<a href="https://arxiv.org/abs/2610.31819" target="_blank" rel="noopener">arXiv:2610.31819</a>), <strong>MIT</strong> (<a href="https://arxiv.org/abs/2610.30066" target="_blank" rel="noopener">arXiv:2610.30066</a>), <strong>Utrecht University</strong> (<a href="https://arxiv.org/abs/2610.41574" target="_blank" rel="noopener">arXiv:2610.41574</a>), and <strong>UT Austin</strong> (<a href="https://arxiv.org/abs/2610.22294" target="_blank" rel="noopener">arXiv:2610.22294</a>) benchmark <strong>Uno</strong> discrete-diffusion decoding.</div>
+        </li>
+        <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Sep 2026</span>
-          <div>Released <a href="https://arxiv.org/abs/2609.04010" target="_blank" rel="noopener">Uno: Unlocking Lossless Speedups in LLMs via Discrete Diffusion</a> (2.2&times; generation speedup, 40% faster RL rollouts, <strong>59.5K+ HF adapter downloads</strong>), featured in <a href="https://nebius.com/events/webinar-nebius-science-paper-club-lossless-speedups-via-discrete-diffusion" target="_blank" rel="noopener">Nebius Science Paper Club</a>, <a href="https://academy.dair.ai/papers/unlocking-lossless-speedups-in-llms-via-discrete-diffusion-2609.04010" target="_blank" rel="noopener">DAIR.AI</a>, <a href="https://i10x.ai/news/diffusion-augmented-llms-lossless-speedups" target="_blank" rel="noopener">i10x</a>, <em>ExplainX.AI</em>, and <em>The Weekly Salt</em>.</div>
+          <div>Launched the <a href="https://ifm.ai/blog/k2/" target="_blank" rel="noopener">K2-Horizon</a> Apache-2.0 open-source model fleet (0.9B&ndash;375B with intermediate checkpoints, full pre-training data, and training/evaluation code).</div>
         </li>
         <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Jun 2026</span>
@@ -131,31 +128,25 @@
           <span class="news-date">May 2026</span>
           <div>Joined the <strong>Institute of Foundation Models (IFM)</strong> in Sunnyvale, CA as Senior Research Scientist (Training Dynamics).</div>
         </li>
-        <li class="news-item">
+        <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Apr 2026</span>
           <div>Released <a href="https://arxiv.org/abs/2604.19835" target="_blank" rel="noopener">Expert Upcycling</a> (-32% GPU-hours on MoE capacity scaling) and open-sourced our NeMo/Megatron implementation at <a href="https://github.com/amazon-science/expert-upcycling" target="_blank" rel="noopener">amazon-science/expert-upcycling</a>.</div>
         </li>
         <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Feb 2026</span>
-          <div>Released <a href="https://arxiv.org/abs/2602.11181" target="_blank" rel="noopener">Code Mixologist: A Practitioner&rsquo;s Guide to Building Code-Mixed LLMs</a> on pre-training, synthetic data, and alignment recipes for multilingual code-mixed language models.</div>
+          <div>Released <a href="https://arxiv.org/abs/2602.11181" target="_blank" rel="noopener">Code Mixologist: A Practitioner&rsquo;s Guide to Building Code-Mixed LLMs</a> on pre-training and alignment recipes for multilingual code-mixed language models.</div>
         </li>
-        <li class="news-item">
+        <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Jan 2026</span>
           <div><a href="https://arxiv.org/abs/2601.11868" target="_blank" rel="noopener">Terminal-Bench</a> accepted to <strong>ICLR 2026</strong> (760+ citations; adopted in official <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" target="_blank" rel="noopener">Google DeepMind Gemini</a> and <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">Anthropic Claude</a> frontier model evaluations).</div>
-        </li>
-        <li class="news-item">
-          <span class="news-date">Dec 2025</span>
-          <div><strong>Amazon Rufus</strong> foundation models surpass <strong>300M+ customers in 2025</strong>, pace <strong>$10B+ in annualized incremental sales</strong> (<a href="https://fortune.com/2025/11/02/amazon-rufus-ai-shopping-assistant-chatbot-10-billion-sales-monetization/" target="_blank" rel="noopener">Fortune</a>), and drive a 100% Black Friday purchase-session increase (<a href="https://techcrunch.com/2025/12/01/amazons-ai-chatbot-rufus-drove-sales-on-black-friday/" target="_blank" rel="noopener">TechCrunch</a>, <a href="https://www.adweek.com/commerce/amazons-rufus-is-just-the-beginning-of-ai-shopping/" target="_blank" rel="noopener">Adweek</a>).</div>
         </li>
         <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Dec 2025</span>
           <div>Senior-authored <a href="https://arxiv.org/abs/2509.13332" target="_blank" rel="noopener">Explicit Reasoning Makes Better Judges</a> presented at the <strong>NeurIPS 2025 Workshop on Efficient Reasoning</strong>.</div>
         </li>
-
-        <!-- Earlier Milestones (2020-2024) revealed smoothly on click -->
         <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Oct 2024</span>
-          <div><strong>Amazon Rufus</strong> expands internationally across Europe and India (including multilingual code-mixed shopping), following its U.S.-wide Prime Day rollout (<a href="https://techcrunch.com/2024/10/29/amazon-brings-its-rufus-ai-shopping-assistant-to-more-international-markets/" target="_blank" rel="noopener">TechCrunch</a>, <a href="https://www.zdnet.com/article/amazons-ai-shopping-assistant-rufus-rolls-out-to-all-us-customers-in-time-for-prime-day/" target="_blank" rel="noopener">ZDNET</a>, <a href="https://aws.amazon.com/blogs/machine-learning/how-rufus-doubled-their-inference-speed-and-handled-prime-day-traffic-with-aws-ai-chips-and-parallel-decoding/" target="_blank" rel="noopener">AWS ML Blog</a>).</div>
+          <div><strong>Amazon Rufus</strong> expands internationally across Europe and India, following its U.S.-wide Prime Day rollout (<a href="https://techcrunch.com/2024/10/29/amazon-brings-its-rufus-ai-shopping-assistant-to-more-international-markets/" target="_blank" rel="noopener">TechCrunch</a>, <a href="https://www.zdnet.com/article/amazons-ai-shopping-assistant-rufus-rolls-out-to-all-us-customers-in-time-for-prime-day/" target="_blank" rel="noopener">ZDNET</a>, <a href="https://aws.amazon.com/blogs/machine-learning/how-rufus-doubled-their-inference-speed-and-handled-prime-day-traffic-with-aws-ai-chips-and-parallel-decoding/" target="_blank" rel="noopener">AWS ML Blog</a>).</div>
         </li>
         <li class="news-item news-older hidden" data-older="true">
           <span class="news-date">Feb 2024</span>
@@ -185,223 +176,31 @@
       <button class="news-more-btn" id="newsMoreBtn" type="button">Show more &darr;</button>
     </section>
 
-    <!-- Publications -->
-    <section id="publications">
-      <div class="section-header">
-        <h2>Publications &amp; Technical Reports</h2>
-        <div class="filter-bar" role="tablist" aria-label="Filter publications">
-          <button class="filter-btn active" data-filter="all" type="button">All (13)</button>
-          <button class="filter-btn" data-filter="moe" type="button">Pre-Training &amp; MoE</button>
-          <button class="filter-btn" data-filter="rl" type="button">RL, Diffusion &amp; Agents</button>
-          <button class="filter-btn" data-filter="multimodal" type="button">Retrieval, Pathology &amp; UQ</button>
-        </div>
-      </div>
-
-      <div class="pub-list">
-
-        <article class="pub-item" data-cat="rl">
-          <div class="pub-top">
-            <span class="venue-badge">EACL 2027</span>
-            <span class="badge-oral">Main Conference Oral</span>
-          </div>
-          <div class="pub-title">Translate-R1: Cost-Aware Translation Tool Use via Reinforcement Learning</div>
-          <div class="pub-authors">Pratik Jayarao, <strong>Chaitanya Dwivedi</strong>, Himanshu Gupta, Neeraj Varshney, Adithya M. Devraj, Meet Vadera, Priyanka Nigam, Bing Yin</div>
-          <p class="pub-summary">Confidence-gated GSPO reinforcement learning enabling reasoning LLMs to invoke external translation tools selectively, retaining full unconstrained reward at <strong>34% lower tool-use cost</strong> across 22 languages with zero-shot generalization to 9 held-out languages.</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2606.06835" target="_blank" rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="moe">
-          <div class="pub-top">
-            <span class="venue-badge">Preprint 2026</span>
-            <span class="badge-oral">First Author</span>
-          </div>
-          <div class="pub-title">Expert Upcycling: Shifting the Compute-Efficient Frontier of Mixture-of-Experts</div>
-          <div class="pub-authors"><strong>Chaitanya Dwivedi</strong>, Binxuan Huang, Himanshu Gupta, Pratik Jayarao, Neeraj Varshney, Bing Yin</div>
-          <p class="pub-summary">Progressive MoE-to-MoE capacity expansion via gradient-guided expert duplication and router extension at fixed active compute per token, matching from-scratch validation loss with <strong>32% fewer GPU-hours</strong> (adopted externally by EPFL to expand a 3B MoE from 128 to 160 experts).</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2604.19835" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://github.com/amazon-science/expert-upcycling" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="moe">
-          <div class="pub-top">
-            <span class="venue-badge">Technical Report 2026</span>
-          </div>
-          <div class="pub-title">K2-Horizon: A Frontier Fleet of Open Source Language Models</div>
-          <div class="pub-authors">K2 Team (Core Contributor on Pre-Training &amp; Diffusion Distillation: <strong>Chaitanya Dwivedi</strong>)</div>
-          <p class="pub-summary">Six fully open Apache-2.0 language models spanning 0.9B to 375B-A23B MoE (512K context), released alongside intermediate training checkpoints, full pre-training data, and training/evaluation code (<strong>680K+ cumulative Hugging Face downloads</strong> across 19 official repositories).</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2611.21003" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://ifm.ai/blog/k2/" target="_blank" rel="noopener">Release Blog</a>
-            <a class="pill-link" href="https://huggingface.co/IFM" target="_blank" rel="noopener">Models</a>
-            <a class="pill-link" href="https://www.tradingview.com/news/reuters.com,2026:newsml_L6N44V0QO:0-abu-dhabi-ai-institute-releases-fully-open-source-models-with-training-data-code/" target="_blank" rel="noopener">Reuters</a>
-            <a class="pill-link" href="https://www.marktechpost.com/2026/09/06/ifm-releases-k2-horizon-six-apache-2-0-models-from-0-9b-to-375b/" target="_blank" rel="noopener">MarkTechPost</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="moe">
-          <div class="pub-top">
-            <span class="venue-badge">Preprint 2026</span>
-          </div>
-          <div class="pub-title">Latent Feedback Is a Compute and Data Amplifier (LoRM)</div>
-          <div class="pub-authors">Benhao Huang, <strong>Chaitanya Dwivedi</strong>, Xuezhe Ma, Alexander Moreno, Hector Liu</div>
-          <p class="pub-summary">Controlled scaling-law study across model sizes, unique tokens, and repetition epochs demonstrating that latent-feedback Transformers match vanilla Transformer loss with up to <strong>48% lower compute</strong> and <strong>47% less unique training data</strong>, with 60M&ndash;271M fits predicting held-out 778M loss within 0.3%.</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2611.20404" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://github.com/ifm-ai/LoRM" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="rl">
-          <div class="pub-top">
-            <span class="venue-badge">Preprint 2026</span>
-          </div>
-          <div class="pub-title">Unlocking Lossless Speedups in LLMs via Discrete Diffusion (Uno)</div>
-          <div class="pub-authors">Subham Sekhar Sahoo, Lingjie Chen, Khiem Pham, Jonathan Geuter, <strong>Chaitanya Dwivedi</strong>, Varad Pimpalkhute, Yash Akhauri, Alexander Moreno, Mikhail Yurochkin, Zhenting Wang, Mostafa Elhoushi, Nolan Dey, Shane Bergsma, Joel Hestness, John Thickstun, Eric Xing, Zhengzhong Liu</div>
-          <p class="pub-summary">Augments frozen autoregressive LLMs with parallel LoRA discrete-diffusion adapters and exact rejection sampling, achieving <strong>2.2&times; faster per-request generation</strong>, <strong>1.5&times; higher throughput</strong>, and up to <strong>40% faster RL rollouts</strong> (59,534 Hugging Face adapter downloads; benchmarked independently by UCLA, Utrecht, MIT &amp; UIUC).</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2609.04010" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://github.com/ifm-ai/uno" target="_blank" rel="noopener">Code</a>
-            <a class="pill-link" href="https://huggingface.co/IFM/K2-Horizon-7B-Uno" target="_blank" rel="noopener">Models</a>
-            <a class="pill-link" href="https://s-sahoo.github.io/uno/" target="_blank" rel="noopener">Project Page</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="moe">
-          <div class="pub-top">
-            <span class="venue-badge">Preprint 2026</span>
-          </div>
-          <div class="pub-title">Code Mixologist: A Practitioner&rsquo;s Guide to Building Code-Mixed LLMs</div>
-          <div class="pub-authors">Himanshu Gupta, Pratik Jayarao, <strong>Chaitanya Dwivedi</strong>, Neeraj Varshney</div>
-          <p class="pub-summary">Systematic pre-training, synthetic data generation, and alignment recipes for multilingual code-mixed language models.</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2602.11181" target="_blank" rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="rl">
-          <div class="pub-top">
-            <span class="venue-badge">ICLR 2026</span>
-          </div>
-          <div class="pub-title">Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces</div>
-          <div class="pub-authors">Terminal-Bench Team (Credited Task Author &amp; Contributor: <strong>Chaitanya Dwivedi</strong>)</div>
-          <p class="pub-summary">Standardized agentic software-engineering and systems benchmark (760+ Google Scholar citations; adopted on official Google DeepMind Gemini and Anthropic Claude frontier model cards). Authored the distributed-training debugging task <code>vpp-loss-divergence</code>, verifier isolation, and Harbor ecosystem contributions.</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2601.11868" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Code</a>
-            <a class="pill-link" href="https://www.tbench.ai/contributors" target="_blank" rel="noopener">Contributors</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="rl">
-          <div class="pub-top">
-            <span class="venue-badge">NeurIPS 2025 ER Workshop</span>
-            <span class="badge-oral">Senior Author</span>
-          </div>
-          <div class="pub-title">Explicit Reasoning Makes Better Judges: A Systematic Study on Accuracy, Efficiency, and Robustness</div>
-          <div class="pub-authors">Pratik Jayarao, Himanshu Gupta, Neeraj Varshney, <strong>Chaitanya Dwivedi</strong></div>
-          <p class="pub-summary">Demonstrates that explicit reasoning trajectories improve small LLM-as-a-Judge accuracy by ~10 percentage points while outperforming costly rubric prompting at a fraction of inference compute (accepted at the NeurIPS 2025 Workshop on Efficient Reasoning as <em>How Far Can SLMs Go Without &lsquo;Thinking&rsquo; in the LLM-as-a-Judge Paradigm?</em>).</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2509.13332" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://openreview.net/forum?id=jAel595Egi" target="_blank" rel="noopener">OpenReview</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="multimodal">
-          <div class="pub-top">
-            <span class="venue-badge">EMNLP 2023 Industry</span>
-            <span class="badge-award">&#9733; Best Industry Paper Award</span>
-          </div>
-          <div class="pub-title">Personalized Dense Retrieval on Global Index for Voice-enabled Conversational Systems</div>
-          <div class="pub-authors">Masha Belyi, Charlotte Dzialo, <strong>Chaitanya Dwivedi</strong>, Prajit Reddy Muppidi, Kanna Shimizu</div>
-          <p class="pub-summary">Jointly encodes behavioral user histories and spoken queries into a global dense retrieval index; deployed U.S.-wide in Amazon Alexa runtime (+80% internal recall, +91% entity retrieval over personalized-index baselines). Selected as the single Best Industry Paper out of 77 accepted Industry Track papers (4,909+ conference submissions).</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://aclanthology.org/2023.emnlp-industry.9/" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://2023.emnlp.org/program/best_papers/" target="_blank" rel="noopener">Award Announcement</a>
-            <a class="pill-link" href="https://www.amazon.science/publications/personalized-dense-retrieval-on-global-index-for-voice-enabled-conversational-systems" target="_blank" rel="noopener">Amazon Science</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="multimodal">
-          <div class="pub-top">
-            <span class="venue-badge">Hepatology / AASLD 2022</span>
-            <span class="badge-oral">Oral Presentation #76</span>
-          </div>
-          <div class="pub-title">Exploratory Analyses of NASH Histology Using CRN Scores Derived from a Multi-Stain Machine Learning Method</div>
-          <div class="pub-authors">John Abel, <strong>Chaitanya Dwivedi</strong>, Shima Nofallah, Maryam Pouryahya, Jacqueline Brosnan-Cashman, Victoria Mountain, Chuhan Chung, Robert P. Myers, Andrew Billin, Tim Watkins, Ali Behrooz, Ilan N. Wapinski, Janani S. Iyer</div>
-          <p class="pub-summary">Applies PathAI&rsquo;s <strong>AIM-Fusion</strong> multi-stain graph model with Gilead Sciences across 1,383 paired NASH biopsy sets (N=510 baseline, N=873 post-treatment), establishing significant correlations (p&nbsp;&lt;&nbsp;0.0001) with FibroScan (r=0.51), morphometric collagen (r=0.72), fat (r=0.80), and RNA-seq NASH gene signatures.</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://journals.lww.com/hep/fulltext/10.1002/hep.32697~abstracts" target="_blank" rel="noopener">Abstract</a>
-            <a class="pill-link" href="https://docs.google.com/presentation/d/1R3BIAhLEneh5QyTtD8qupobMQ2duJ4T2/preview" target="_blank" rel="noopener">Slides</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="multimodal">
-          <div class="pub-top">
-            <span class="venue-badge">IEEE/CVF CVPR 2022 (CVMI)</span>
-            <span class="badge-oral">First Author &middot; Live Oral</span>
-          </div>
-          <div class="pub-title">Multi Stain Graph Fusion for Multimodal Integration in Pathology</div>
-          <div class="pub-authors"><strong>Chaitanya Dwivedi</strong>, Shima Nofallah, Maryam Pouryahya, Janani Iyer, Kenneth Leidal, Chuhan Chung, Timothy Watkins, Andrew Billin, Robert Myers, John Abel, Ali Behrooz</div>
-          <p class="pub-summary">Pioneering multimodal CNN&ndash;GNN graph fusion framework integrating non-registered H&amp;E and Masson&rsquo;s Trichrome whole-slide images (+20% improvement in weighted Cohen&rsquo;s kappa on liver fibrosis staging across 5,160 biopsy pairs; 1 of 8 full papers accepted at CVPR 2022 CVMI; cited 40+ times across <em>Nature Medicine</em>, CVPR &amp; <em>Medical Image Analysis</em>).</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://openaccess.thecvf.com/content/CVPR2022W/CVMI/html/Dwivedi_Multi_Stain_Graph_Fusion_for_Multimodal_Integration_in_Pathology_CVPRW_2022_paper.html" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://cvmi-workshop.github.io/CVMI2022/program.html" target="_blank" rel="noopener">Oral Program</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="multimodal">
-          <div class="pub-top">
-            <span class="venue-badge">UAI 2021</span>
-            <span class="badge-oral">Main Track Oral</span>
-          </div>
-          <div class="pub-title">Deep Kernels with Probabilistic Embeddings for Small-Data Learning</div>
-          <div class="pub-authors">Ankur Mallick, <strong>Chaitanya Dwivedi</strong>, Bhavya Kailkhura, Gauri Joshi, T. Y.-J. Han</div>
-          <p class="pub-summary">Learns probabilistic latent embeddings inside deep Gaussian process kernels to capture epistemic uncertainty in scarce-data regimes (CMU &amp; Lawrence Livermore National Laboratory; benchmarked in AAAI 2023 &amp; ACM WWW).</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://proceedings.mlr.press/v161/mallick21a.html" target="_blank" rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-item" data-cat="multimodal">
-          <div class="pub-top">
-            <span class="venue-badge">arXiv 2020 / ICML UDL</span>
-          </div>
-          <div class="pub-title">Probabilistic Neighbourhood Component Analysis: Sample Efficient Uncertainty Estimation in Deep Learning</div>
-          <div class="pub-authors">Ankur Mallick, <strong>Chaitanya Dwivedi</strong>, Bhavya Kailkhura, Gauri Joshi, T. Han</div>
-          <p class="pub-summary">Sample-efficient out-of-distribution and clinical uncertainty estimation via probabilistic neighborhood component analysis; highlighted by Andrew Ng&rsquo;s <em>DeepLearning.AI The Batch</em> (Issue 51).</p>
-          <div class="pub-links">
-            <a class="pill-link" href="https://arxiv.org/abs/2007.10800" target="_blank" rel="noopener">Paper</a>
-            <a class="pill-link" href="https://www.deeplearning.ai/the-batch/issue-51/" target="_blank" rel="noopener">The Batch</a>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Industry Highlights -->
+    <!-- Research, Industry & Open-Source Highlights (Elevated right below News) -->
     <section id="highlights">
       <div class="section-header">
-        <h2>Industry Highlights</h2>
+        <h2>Research &amp; Industry Highlights</h2>
       </div>
-      <div class="highlights-grid">
+      <div class="highlights-grid-2">
         <div class="impact-card">
           <h3>Amazon Rufus Foundation Models</h3>
           <div class="impact-metric">300M+ Customers &middot; $10B+ Annualized Sales</div>
-          <p>Led pre-training and ~trillion-parameter scale ultra-sparse MoE architecture design, delivering base models that matched or surpassed <strong>DeepSeek-V3-Base</strong> and <strong>Kimi-K2-Base</strong> across <strong>MMLU, MMLU-Pro, MATH</strong>, and shopping benchmarks at <strong>50% lower latency</strong> and <strong>2&times; MFU</strong>.</p>
+          <p>Led ~trillion-parameter scale ultra-sparse MoE architecture design and pre-training, matching or surpassing <strong>DeepSeek-V3-Base</strong> and <strong>Kimi-K2-Base</strong> across <strong>MMLU, MMLU-Pro, MATH</strong>, and shopping benchmarks at <strong>50% lower latency</strong> and <strong>2&times; MFU</strong>, alongside <strong>asynchronous GRPO RL (2&times; training throughput)</strong>.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Recurrent-Depth, Scaling Proxies &amp; RL (IFM)</h3>
+          <div class="impact-metric">&tau;<sub>b</sub> = 0.946 Capability Proxies &middot; Loop Growth &amp; Length RL</div>
+          <p>Designed likelihood/entropy/rank capability proxies replacing validation-loss scaling laws in recipe selection, alongside recurrent-depth MoE growth, KV-cache sharing for long-context serving, and <strong>trajectory length-penalty optimization</strong> in RL.</p>
         </div>
         <div class="impact-card">
           <h3>Amazon Alexa Semantic Retrieval</h3>
-          <div class="impact-metric">500M+ Devices &middot; EMNLP Best Paper</div>
+          <div class="impact-metric">500M+ Devices &middot; EMNLP 2023 Best Paper</div>
           <p>Directed U.S.-wide runtime deployment of query-correction and global-index personalized dense voice retrieval models (+80% recall, +91% entity retrieval).</p>
         </div>
         <div class="impact-card">
           <h3>PathAI AIM-Fusion Pathology</h3>
           <div class="impact-metric">1,383 Trial Biopsies &middot; Gilead Sciences</div>
-          <p>Led research on non-registered multi-stain CNN&ndash;GNN pathology models productized as <strong>AIM-Fusion</strong> across multi-center NASH clinical trials.</p>
+          <p>Led research on first-of-their-kind non-registered multi-stain CNN&ndash;GNN pathology models productized as <strong>AIM-Fusion</strong> across multi-center NASH clinical trials.</p>
         </div>
       </div>
 
@@ -424,6 +223,204 @@
           <div class="impact-metric">Terminal-Bench &middot; Harbor &middot; Megatron &middot; NeMo</div>
           <p>Contributed distributed-training tasks and evaluation adapters to <a href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Terminal-Bench</a> and <a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener">Harbor</a>, plus upstream MoE improvements in <a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" rel="noopener">Megatron-LM</a> and <a href="https://github.com/NVIDIA/NeMo" target="_blank" rel="noopener">NeMo</a>.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- Publications (Defaults to Selected (8), with All (13) & Topic Filters) -->
+    <section id="publications">
+      <div class="section-header">
+        <h2>Publications &amp; Technical Reports</h2>
+        <div class="filter-bar" role="tablist" aria-label="Filter publications">
+          <button class="filter-btn active" data-filter="selected" type="button">Selected (8)</button>
+          <button class="filter-btn" data-filter="all" type="button">All (13)</button>
+          <button class="filter-btn" data-filter="moe" type="button">Pre-Training &amp; MoE</button>
+          <button class="filter-btn" data-filter="rl" type="button">RL, Diffusion &amp; Agents</button>
+          <button class="filter-btn" data-filter="multimodal" type="button">Retrieval, Pathology &amp; UQ</button>
+        </div>
+      </div>
+
+      <div class="pub-list">
+
+        <article class="pub-item" data-cat="rl" data-selected="true">
+          <div class="pub-top">
+            <span class="venue-badge">EACL 2027</span>
+            <span class="badge-oral">Main Conference Oral</span>
+          </div>
+          <div class="pub-title">Translate-R1: Cost-Aware Translation Tool Use via Reinforcement Learning</div>
+          <div class="pub-authors">Pratik Jayarao, <strong>Chaitanya Dwivedi</strong>, Himanshu Gupta, Neeraj Varshney, Adithya M. Devraj, Meet Vadera, Priyanka Nigam, Bing Yin</div>
+          <p class="pub-summary">Confidence-gated GSPO RL for selective translation tool invocation, retaining full reward at <strong>34% lower tool-use cost</strong> across 22 languages with zero-shot transfer to 9 held-out languages.</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2606.06835" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </article>
+
+        <article class="pub-item" data-cat="moe" data-selected="true">
+          <div class="pub-top">
+            <span class="venue-badge">Preprint 2026</span>
+            <span class="badge-oral">First Author</span>
+          </div>
+          <div class="pub-title">Expert Upcycling: Shifting the Compute-Efficient Frontier of Mixture-of-Experts</div>
+          <div class="pub-authors"><strong>Chaitanya Dwivedi</strong>, Binxuan Huang, Himanshu Gupta, Pratik Jayarao, Neeraj Varshney, Bing Yin</div>
+          <p class="pub-summary">Gradient-guided MoE capacity expansion at fixed active compute per token, matching from-scratch validation loss with <strong>32% fewer GPU-hours</strong> (adopted by EPFL).</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2604.19835" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://github.com/amazon-science/expert-upcycling" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <article class="pub-item" data-cat="moe" data-selected="true">
+          <div class="pub-top">
+            <span class="venue-badge">Technical Report 2026</span>
+          </div>
+          <div class="pub-title">K2-Horizon: A Frontier Fleet of Open Source Language Models</div>
+          <div class="pub-authors">K2 Team (Core Contributor on Pre-Training &amp; Diffusion Distillation: <strong>Chaitanya Dwivedi</strong>)</div>
+          <p class="pub-summary">Six fully open Apache-2.0 models (0.9B to 375B-A23B MoE, 512K context) released with intermediate checkpoints, full pre-training data, and code.</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2611.21003" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://ifm.ai/blog/k2/" target="_blank" rel="noopener">Release Blog</a>
+            <a class="pill-link" href="https://huggingface.co/IFM" target="_blank" rel="noopener">Models</a>
+            <a class="pill-link" href="https://www.tradingview.com/news/reuters.com,2026:newsml_L6N44V0QO:0-abu-dhabi-ai-institute-releases-fully-open-source-models-with-training-data-code/" target="_blank" rel="noopener">Reuters</a>
+            <a class="pill-link" href="https://www.marktechpost.com/2026/09/06/ifm-releases-k2-horizon-six-apache-2-0-models-from-0-9b-to-375b/" target="_blank" rel="noopener">MarkTechPost</a>
+          </div>
+        </article>
+
+        <article class="pub-item" data-cat="moe" data-selected="true">
+          <div class="pub-top">
+            <span class="venue-badge">Preprint 2026</span>
+          </div>
+          <div class="pub-title">Latent Feedback Is a Compute and Data Amplifier (LoRM)</div>
+          <div class="pub-authors">Benhao Huang, <strong>Chaitanya Dwivedi</strong>, Xuezhe Ma, Alexander Moreno, Hector Liu</div>
+          <p class="pub-summary">Controlled scaling laws showing latent-feedback Transformers match standard Transformer loss with <strong>48% lower compute</strong> and <strong>47% less unique data</strong> (predicting 778M loss within 0.3%).</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2611.20404" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://github.com/ifm-ai/LoRM" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <article class="pub-item" data-cat="rl" data-selected="true">
+          <div class="pub-top">
+            <span class="venue-badge">Preprint 2026</span>
+          </div>
+          <div class="pub-title">Unlocking Lossless Speedups in LLMs via Discrete Diffusion (Uno)</div>
+          <div class="pub-authors">Subham Sekhar Sahoo, Lingjie Chen, Khiem Pham, Jonathan Geuter, <strong>Chaitanya Dwivedi</strong>, Varad Pimpalkhute, Yash Akhauri, Alexander Moreno, Mikhail Yurochkin, Zhenting Wang, Mostafa Elhoushi, Nolan Dey, Shane Bergsma, Joel Hestness, John Thickstun, Eric Xing, Zhengzhong Liu</div>
+          <p class="pub-summary">Parallel LoRA discrete-diffusion adapters with exact rejection sampling, delivering <strong>2.2&times; faster generation</strong>, <strong>1.5&times; throughput</strong>, and up to <strong>40% faster RL rollouts</strong>.</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2609.04010" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://github.com/ifm-ai/uno" target="_blank" rel="noopener">Code</a>
+            <a class="pill-link" href="https://huggingface.co/IFM/K2-Horizon-7B-Uno" target="_blank" rel="noopener">Models</a>
+            <a class="pill-link" href="https://s-sahoo.github.io/uno/" target="_blank" rel="noopener">Project Page</a>
+          </div>
+        </article>
+
+        <article class="pub-item hidden" data-cat="moe">
+          <div class="pub-top">
+            <span class="venue-badge">Preprint 2026</span>
+          </div>
+          <div class="pub-title">Code Mixologist: A Practitioner&rsquo;s Guide to Building Code-Mixed LLMs</div>
+          <div class="pub-authors">Himanshu Gupta, Pratik Jayarao, <strong>Chaitanya Dwivedi</strong>, Neeraj Varshney</div>
+          <p class="pub-summary">Systematic pre-training, synthetic data generation, and alignment recipes for multilingual code-mixed language models.</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2602.11181" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </article>
+
+        <article class="pub-item" data-cat="rl" data-selected="true">
+          <div class="pub-top">
+            <span class="venue-badge">ICLR 2026</span>
+          </div>
+          <div class="pub-title">Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces</div>
+          <div class="pub-authors">Terminal-Bench Team (Credited Task Author &amp; Contributor: <strong>Chaitanya Dwivedi</strong>)</div>
+          <p class="pub-summary">Standardized CLI agent benchmark (adopted on Gemini and Claude model cards); authored distributed-training debugging task <code>vpp-loss-divergence</code> and Harbor ecosystem adapters.</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2601.11868" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://github.com/harbor-framework/terminal-bench" target="_blank" rel="noopener">Code</a>
+            <a class="pill-link" href="https://www.tbench.ai/contributors" target="_blank" rel="noopener">Contributors</a>
+          </div>
+        </article>
+
+        <article class="pub-item hidden" data-cat="rl">
+          <div class="pub-top">
+            <span class="venue-badge">NeurIPS 2025 ER Workshop</span>
+            <span class="badge-oral">Senior Author</span>
+          </div>
+          <div class="pub-title">Explicit Reasoning Makes Better Judges: A Systematic Study on Accuracy, Efficiency, and Robustness</div>
+          <div class="pub-authors">Pratik Jayarao, Himanshu Gupta, Neeraj Varshney, <strong>Chaitanya Dwivedi</strong></div>
+          <p class="pub-summary">Shows explicit reasoning trajectories lift small LLM-as-a-Judge accuracy by ~10 percentage points while outperforming rubric prompting at a fraction of compute.</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2509.13332" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://openreview.net/forum?id=jAel595Egi" target="_blank" rel="noopener">OpenReview</a>
+          </div>
+        </article>
+
+        <article class="pub-item" data-cat="multimodal" data-selected="true">
+          <div class="pub-top">
+            <span class="venue-badge">EMNLP 2023 Industry</span>
+            <span class="badge-award">&#9733; Best Industry Paper Award</span>
+          </div>
+          <div class="pub-title">Personalized Dense Retrieval on Global Index for Voice-enabled Conversational Systems</div>
+          <div class="pub-authors">Masha Belyi, Charlotte Dzialo, <strong>Chaitanya Dwivedi</strong>, Prajit Reddy Muppidi, Kanna Shimizu</div>
+          <p class="pub-summary">Jointly encodes behavioral histories and spoken queries into a global dense index; deployed U.S.-wide in Amazon Alexa (+80% recall, +91% entity retrieval).</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://aclanthology.org/2023.emnlp-industry.9/" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://2023.emnlp.org/program/best_papers/" target="_blank" rel="noopener">Award Announcement</a>
+            <a class="pill-link" href="https://www.amazon.science/publications/personalized-dense-retrieval-on-global-index-for-voice-enabled-conversational-systems" target="_blank" rel="noopener">Amazon Science</a>
+          </div>
+        </article>
+
+        <article class="pub-item hidden" data-cat="multimodal">
+          <div class="pub-top">
+            <span class="venue-badge">Hepatology / AASLD 2022</span>
+            <span class="badge-oral">Oral Presentation #76</span>
+          </div>
+          <div class="pub-title">Exploratory Analyses of NASH Histology Using CRN Scores Derived from a Multi-Stain Machine Learning Method</div>
+          <div class="pub-authors">John Abel, <strong>Chaitanya Dwivedi</strong>, Shima Nofallah, Maryam Pouryahya, Jacqueline Brosnan-Cashman, Victoria Mountain, Chuhan Chung, Robert P. Myers, Andrew Billin, Tim Watkins, Ali Behrooz, Ilan N. Wapinski, Janani S. Iyer</div>
+          <p class="pub-summary">Validates PathAI&rsquo;s <strong>AIM-Fusion</strong> multi-stain graph model with Gilead Sciences across 1,383 paired NASH clinical-trial biopsies against FibroScan, morphometry, and RNA-seq.</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://journals.lww.com/hep/fulltext/10.1002/hep.32697~abstracts" target="_blank" rel="noopener">Abstract</a>
+            <a class="pill-link" href="https://docs.google.com/presentation/d/1R3BIAhLEneh5QyTtD8qupobMQ2duJ4T2/preview" target="_blank" rel="noopener">Slides</a>
+          </div>
+        </article>
+
+        <article class="pub-item" data-cat="multimodal" data-selected="true">
+          <div class="pub-top">
+            <span class="venue-badge">IEEE/CVF CVPR 2022 (CVMI)</span>
+            <span class="badge-oral">First Author &middot; Live Oral</span>
+          </div>
+          <div class="pub-title">Multi Stain Graph Fusion for Multimodal Integration in Pathology</div>
+          <div class="pub-authors"><strong>Chaitanya Dwivedi</strong>, Shima Nofallah, Maryam Pouryahya, Janani Iyer, Kenneth Leidal, Chuhan Chung, Timothy Watkins, Andrew Billin, Robert Myers, John Abel, Ali Behrooz</div>
+          <p class="pub-summary">Multimodal CNN&ndash;GNN graph fusion integrating non-registered H&amp;E and Trichrome whole-slide images (+20% weighted Cohen&rsquo;s kappa across 5,160 liver biopsy pairs).</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://openaccess.thecvf.com/content/CVPR2022W/CVMI/html/Dwivedi_Multi_Stain_Graph_Fusion_for_Multimodal_Integration_in_Pathology_CVPRW_2022_paper.html" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://cvmi-workshop.github.io/CVMI2022/program.html" target="_blank" rel="noopener">Oral Program</a>
+          </div>
+        </article>
+
+        <article class="pub-item hidden" data-cat="multimodal">
+          <div class="pub-top">
+            <span class="venue-badge">UAI 2021</span>
+            <span class="badge-oral">Main Track Oral</span>
+          </div>
+          <div class="pub-title">Deep Kernels with Probabilistic Embeddings for Small-Data Learning</div>
+          <div class="pub-authors">Ankur Mallick, <strong>Chaitanya Dwivedi</strong>, Bhavya Kailkhura, Gauri Joshi, T. Y.-J. Han</div>
+          <p class="pub-summary">Probabilistic latent embeddings inside deep Gaussian process kernels for epistemic uncertainty estimation in scarce-data regimes (CMU &amp; LLNL).</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://proceedings.mlr.press/v161/mallick21a.html" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </article>
+
+        <article class="pub-item hidden" data-cat="multimodal">
+          <div class="pub-top">
+            <span class="venue-badge">arXiv 2020 / ICML UDL</span>
+          </div>
+          <div class="pub-title">Probabilistic Neighbourhood Component Analysis: Sample Efficient Uncertainty Estimation in Deep Learning</div>
+          <div class="pub-authors">Ankur Mallick, <strong>Chaitanya Dwivedi</strong>, Bhavya Kailkhura, Gauri Joshi, T. Han</div>
+          <p class="pub-summary">Sample-efficient out-of-distribution and clinical uncertainty estimation; highlighted in Andrew Ng&rsquo;s <em>DeepLearning.AI The Batch</em> (Issue 51).</p>
+          <div class="pub-links">
+            <a class="pill-link" href="https://arxiv.org/abs/2007.10800" target="_blank" rel="noopener">Paper</a>
+            <a class="pill-link" href="https://www.deeplearning.ai/the-batch/issue-51/" target="_blank" rel="noopener">The Batch</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -501,6 +498,17 @@
         }
       });
 
+      // Inline K2-Horizon Media Outlets Toggle
+      const k2Btn = document.getElementById("k2OutletsBtn");
+      const k2Extra = document.getElementById("k2ExtraOutlets");
+      if (k2Btn && k2Extra) {
+        k2Btn.addEventListener("click", function () {
+          const isOpen = !k2Extra.classList.contains("hidden");
+          k2Extra.classList.toggle("hidden", isOpen);
+          k2Btn.textContent = isOpen ? "+6 more" : "less";
+        });
+      }
+
       // News Earlier Milestones Toggle
       const newsBtn = document.getElementById("newsMoreBtn");
       const olderItems = document.querySelectorAll(".news-older");
@@ -517,7 +525,7 @@
         });
       }
 
-      // Publication Category Filter
+      // Publication Category Filter (Selected default + All + Topics)
       const filterBtns = document.querySelectorAll(".filter-btn");
       const pubItems = document.querySelectorAll(".pub-item");
       filterBtns.forEach(function (fb) {
@@ -526,11 +534,11 @@
           fb.classList.add("active");
           const cat = fb.getAttribute("data-filter");
           pubItems.forEach(function (item) {
-            if (cat === "all" || item.getAttribute("data-cat") === cat) {
-              item.classList.remove("hidden");
-            } else {
-              item.classList.add("hidden");
-            }
+            const match =
+              cat === "all" ||
+              (cat === "selected" && item.getAttribute("data-selected") === "true") ||
+              item.getAttribute("data-cat") === cat;
+            item.classList.toggle("hidden", !match);
           });
         });
       });
