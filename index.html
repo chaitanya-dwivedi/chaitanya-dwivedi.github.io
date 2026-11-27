@@ -21,7 +21,7 @@
       <a href="#top" class="nav-brand">Chaitanya Dwivedi</a>
       <div class="nav-links">
         <a href="#news" class="hide-mobile">News</a>
-        <a href="#highlights" class="hide-mobile">Highlights</a>
+        <a href="#research" class="hide-mobile">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience" class="hide-mobile">Experience</a>
         <a href="assets/Chaitanya_Dwivedi_CV.pdf" target="_blank" rel="noopener">CV</a>
@@ -172,32 +172,51 @@
       <button class="news-more-btn" id="newsMoreBtn" type="button" aria-expanded="false">Show more &darr;</button>
     </section>
 
-    <!-- Systems & Deployment Highlights (Complementary technical/deployment substance, zero intro/pub repetition) -->
-    <section id="highlights">
+    <!-- Research Themes (Editorial synthesis of core research pillars & flagship systems) -->
+    <section id="research">
       <div class="section-header">
-        <h2>Systems &amp; Deployment Highlights</h2>
+        <h2>Research Themes</h2>
       </div>
-      <div class="highlights-grid">
-        <div class="impact-card">
-          <h3>Scaling Proxies, Recurrent-Depth &amp; RL (IFM)</h3>
-          <div class="impact-metric">Kendall&rsquo;s &tau;<sub>b</sub> = 0.946 Proxies &middot; KV-Cache Sharing &middot; Length RL</div>
-          <p>Designed likelihood, entropy, and rank capability proxies replacing validation-loss scaling laws in recipe selection, alongside recurrent-depth MoE growth, KV-cache sharing for long-context serving, and <strong>trajectory length-penalty optimization</strong>.</p>
-        </div>
-        <div class="impact-card">
-          <h3>Amazon Rufus: MoE Systems, Mid-Training &amp; RL</h3>
-          <div class="impact-metric">50% Lower Latency &middot; 2&times; MFU &middot; 2&times; Async GRPO Throughput</div>
-          <p>Co-designed ultra-sparse MoE sparsity and attention for <strong>50% lower serving latency</strong> and <strong>2&times; cluster MFU</strong>, revived <strong>75% of dormant experts</strong> (+10% quality), curated mid-training mixtures (+10% on AIME&rsquo;25 &amp; SWE-bench), and built async GRPO RL.</p>
-        </div>
-        <div class="impact-card">
-          <h3>Amazon Alexa: U.S.-Wide Voice Retrieval</h3>
-          <div class="impact-metric">500M+ Devices &middot; EMNLP 2023 Best Industry Paper</div>
-          <p>Led the U.S.-wide runtime deployment of query-correction and global-index personalized dense voice retrieval models, improving recall by <strong>+80%</strong> and entity retrieval by <strong>+91%</strong> across production traffic.</p>
-        </div>
-        <div class="impact-card">
-          <h3>PathAI: AIM-Fusion Clinical Deployment</h3>
-          <div class="impact-metric">1,383 Trial Biopsies &middot; Gilead Sciences</div>
-          <p>Productized non-registered multi-stain CNN&ndash;GNN pathology models as <strong>AIM-Fusion</strong> across multi-center NASH clinical trials, validating histological scores against FibroScan, morphometry, and RNA-seq.</p>
-        </div>
+      <div class="themes-list">
+        <article class="theme-row">
+          <div class="theme-head">
+            <h3>Scaling Laws &amp; Capability Proxies</h3>
+            <div class="theme-meta">IFM &middot; LoRM &middot; K2-Horizon</div>
+          </div>
+          <p class="theme-body">
+            Co-authored controlled scaling laws for latent-feedback Transformers (<a href="https://arxiv.org/abs/2611.20404" target="_blank" rel="noopener">LoRM</a>: up to <strong>48% lower compute</strong> and 47% less unique data) and formulated likelihood-, entropy-, and rank-based capability proxies predicting downstream reasoning, math, and coding on held-out larger models (<strong>Kendall&rsquo;s &tau;<sub>b</sub> = 0.946</strong>), replacing validation-loss scaling laws in recipe selection, alongside pre-training and distillation recipes for the <a href="https://arxiv.org/abs/2611.21003" target="_blank" rel="noopener">K2-Horizon</a> fleet (0.9B, 3.7B, and 7B frontier performance in their size classes at release).
+          </p>
+        </article>
+
+        <article class="theme-row">
+          <div class="theme-head">
+            <h3>Sparse MoE, Model Growth &amp; Recurrent Depth</h3>
+            <div class="theme-meta">IFM &middot; Rufus &middot; Expert Upcycling</div>
+          </div>
+          <p class="theme-body">
+            Co-designed sparsity and attention for Amazon Rufus&rsquo;s ~trillion-parameter scale ultra-sparse MoE, resolving multi-head latent attention (MLA) and virtual pipeline parallelism bottlenecks to achieve <strong>2&times; cluster MFU</strong>, <strong>50% lower serving latency</strong>, and a +22% quality gain over the prior production baseline, while reactivating <strong>75% of dormant experts</strong> (up to +10% downstream quality). Developed gradient-guided <a href="https://arxiv.org/abs/2604.19835" target="_blank" rel="noopener">Expert Upcycling</a> (-32% GPU-hours) and study recurrent-depth MoE growth alongside KV-cache sharing for memory-efficient long-context inference.
+          </p>
+        </article>
+
+        <article class="theme-row">
+          <div class="theme-head">
+            <h3>Mid-Training, Agentic RL &amp; Fast Decoding</h3>
+            <div class="theme-meta">IFM &middot; Amazon &middot; Uno &middot; Translate-R1</div>
+          </div>
+          <p class="theme-body">
+            Curated mid-training data mixtures (up to <strong>+10%</strong> on AIME&rsquo;25 and SWE-bench) and persona-driven DPO recipes (+8 percentage points over SFT across 15 benchmarks) for Rufus, alongside <strong>asynchronous VERL GRPO</strong> (<strong>2&times; RL throughput</strong>). Co-developed <a href="https://arxiv.org/abs/2609.04010" target="_blank" rel="noopener">Uno</a> lossless discrete-diffusion decoding (2.2&times; faster generation, up to 40% faster RL rollouts) and <a href="https://arxiv.org/abs/2606.06835" target="_blank" rel="noopener">Translate-R1</a> cost-aware GSPO RL (EACL 2027 Oral), while studying trajectory length-penalty optimization, reasoning judges, and <a href="https://arxiv.org/abs/2601.11868" target="_blank" rel="noopener">Terminal-Bench</a>.
+          </p>
+        </article>
+
+        <article class="theme-row">
+          <div class="theme-head">
+            <h3>Production Retrieval &amp; Multimodal Clinical AI</h3>
+            <div class="theme-meta">Amazon Alexa &middot; PathAI AIM-Fusion</div>
+          </div>
+          <p class="theme-body">
+            Led U.S.-wide runtime deployment of query-correction and global-index personalized dense voice retrieval across <strong>500M+ Amazon Alexa devices</strong> (<strong>+80% recall</strong>, +91% entity retrieval; <a href="https://aclanthology.org/2023.emnlp-industry.9/" target="_blank" rel="noopener">EMNLP 2023 Best Industry Paper</a>). Earlier at PathAI, productized non-registered multi-stain CNN&ndash;GNN pathology models as <strong>AIM-Fusion</strong> across <strong>1,383 paired NASH clinical-trial biopsies</strong> with Gilead Sciences, validating histological scores against FibroScan, morphometry, and RNA-seq (<a href="https://openaccess.thecvf.com/content/CVPR2022W/CVMI/html/Dwivedi_Multi_Stain_Graph_Fusion_for_Multimodal_Integration_in_Pathology_CVPRW_2022_paper.html" target="_blank" rel="noopener">CVPR 2022</a>, <a href="https://journals.lww.com/hep/fulltext/10.1002/hep.32697~abstracts" target="_blank" rel="noopener">AASLD 2022 Oral</a>).
+          </p>
+        </article>
       </div>
     </section>
 
