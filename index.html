@@ -108,7 +108,7 @@
         </li>
         <li class="news-item">
           <span class="news-date">Sep 2026</span>
-          <div>Released <a href="https://arxiv.org/abs/2609.04010" target="_blank" rel="noopener">Uno: Unlocking Lossless Speedups in LLMs via Discrete Diffusion</a> (2.2&times; generation speedup, 40% faster RL rollouts, <strong>59.5K+ HF adapter downloads</strong>), featured in <a href="https://nebius.com/events/webinar-nebius-science-paper-club-lossless-speedups-via-discrete-diffusion" target="_blank" rel="noopener">Nebius Science Paper Club</a>, <a href="https://academy.dair.ai/papers/unlocking-lossless-speedups-in-llms-via-discrete-diffusion-2609.04010" target="_blank" rel="noopener">DAIR.AI</a>, and <em>The Weekly Salt</em>.</div>
+          <div>Released <a href="https://arxiv.org/abs/2609.04010" target="_blank" rel="noopener">Uno: Unlocking Lossless Speedups in LLMs via Discrete Diffusion</a> (2.2&times; generation speedup, 40% faster RL rollouts, <strong>59.5K+ HF adapter downloads</strong>; <a href="https://huggingface.co/papers/2609.04010" target="_blank" rel="noopener">HF #1 Paper of the Day</a>), featured in <a href="https://www.youtube.com/watch?v=lZmgfPMyWg8" target="_blank" rel="noopener">Cohere</a>, <a href="https://nebius.com/events/webinar-nebius-science-paper-club-lossless-speedups-via-discrete-diffusion" target="_blank" rel="noopener">Nebius Science Paper Club</a>, <a href="https://academy.dair.ai/papers/unlocking-lossless-speedups-in-llms-via-discrete-diffusion-2609.04010" target="_blank" rel="noopener">DAIR.AI</a>, <a href="https://thesalt.substack.com/p/lossless-diffusion-speedups-random" target="_blank" rel="noopener">The Weekly Salt</a><span class="extra-outlets hidden" id="unoExtraOutlets">, <a href="https://i10x.ai/news/diffusion-augmented-llms-lossless-speedups" target="_blank" rel="noopener">i10X News</a>, <a href="https://explainx.ai/blog/ifm-uno-diffusion-augmented-llm-speedup-2026" target="_blank" rel="noopener">ExplainX</a>, <a href="https://mer.vin/news/uno-diffusion-augmented-llms-deliver-lossless-3x-inference-speedups/" target="_blank" rel="noopener">Mervin Praison</a>, and the <a href="https://www.youtube.com/watch?v=IqbltB4ppqs" target="_blank" rel="noopener">Discrete Diffusion Reading Group</a></span> <button class="inline-toggle" id="unoOutletsBtn" type="button" aria-expanded="false" aria-controls="unoExtraOutlets">+4 more</button>.</div>
         </li>
 
         <!-- Expanded News History (strict reverse-chronological, revealed on click) -->
@@ -313,6 +313,7 @@
             <a class="pill-link" href="https://github.com/ifm-ai/uno" target="_blank" rel="noopener">Code</a>
             <a class="pill-link" href="https://huggingface.co/IFM/K2-Horizon-7B-Uno" target="_blank" rel="noopener">Models</a>
             <a class="pill-link" href="https://s-sahoo.github.io/uno/" target="_blank" rel="noopener">Project Page</a>
+            <a class="pill-link" href="https://www.youtube.com/watch?v=lZmgfPMyWg8" target="_blank" rel="noopener">Cohere Talk</a>
           </div>
         </article>
 
@@ -507,17 +508,22 @@
         }
       });
 
-      // Inline K2-Horizon Media Outlets Toggle
-      const k2Btn = document.getElementById("k2OutletsBtn");
-      const k2Extra = document.getElementById("k2ExtraOutlets");
-      if (k2Btn && k2Extra) {
-        k2Btn.addEventListener("click", function () {
-          const isOpen = !k2Extra.classList.contains("hidden");
-          k2Extra.classList.toggle("hidden", isOpen);
-          k2Btn.textContent = isOpen ? "+6 more" : "less";
-          k2Btn.setAttribute("aria-expanded", isOpen ? "false" : "true");
-        });
-      }
+      // Inline Media Outlets Toggles (K2-Horizon & Uno)
+      [
+        { btnId: "k2OutletsBtn", extraId: "k2ExtraOutlets", label: "+6 more" },
+        { btnId: "unoOutletsBtn", extraId: "unoExtraOutlets", label: "+4 more" }
+      ].forEach(function (cfg) {
+        const btn = document.getElementById(cfg.btnId);
+        const extra = document.getElementById(cfg.extraId);
+        if (btn && extra) {
+          btn.addEventListener("click", function () {
+            const isOpen = !extra.classList.contains("hidden");
+            extra.classList.toggle("hidden", isOpen);
+            btn.textContent = isOpen ? cfg.label : "less";
+            btn.setAttribute("aria-expanded", isOpen ? "false" : "true");
+          });
+        }
+      });
 
       // News Earlier Milestones Toggle
       const newsBtn = document.getElementById("newsMoreBtn");
